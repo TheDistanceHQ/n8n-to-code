@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/types" },
+    { "path": "packages/context-shim" },
+    { "path": "packages/compiler" },
+    { "path": "packages/executor" },
+    { "path": "packages/cli" }
+  ]
+}

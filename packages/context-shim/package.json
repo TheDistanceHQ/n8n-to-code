@@ -1,0 +1,16 @@
+{
+  "name": "@n8n-to-code/context-shim",
+  "version": "0.1.0",
+  "description": "IExecuteFunctions context shim for running n8n nodes outside n8n",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "@n8n-to-code/types": "0.1.0",
+    "n8n-workflow": "*",
+    "axios": "^1.7.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@n8n-to-code/cli",
+  "version": "0.1.0",
+  "description": "CLI tool for compiling n8n workflows to TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "n8n-to-code": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "@n8n-to-code/types": "0.1.0",
+    "@n8n-to-code/compiler": "0.1.0",
+    "commander": "^12.0.0"
+  }
+}

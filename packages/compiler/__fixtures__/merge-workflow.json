@@ -1,0 +1,15 @@
+{
+  "name": "Merge Workflow",
+  "nodes": [
+    { "id": "t1", "name": "Trigger", "type": "n8n-nodes-base.manualTrigger", "typeVersion": 1, "position": [0, 0], "parameters": {} },
+    { "id": "s1", "name": "Branch1", "type": "n8n-nodes-base.set", "typeVersion": 3.4, "position": [200, -100], "parameters": { "mode": "manual", "assignments": { "assignments": [] } } },
+    { "id": "s2", "name": "Branch2", "type": "n8n-nodes-base.set", "typeVersion": 3.4, "position": [200, 100], "parameters": { "mode": "manual", "assignments": { "assignments": [] } } },
+    { "id": "m1", "name": "Merge", "type": "n8n-nodes-base.merge", "typeVersion": 3, "position": [400, 0], "parameters": { "mode": "combine", "mergeByFields": { "values": [] } } }
+  ],
+  "connections": {
+    "Trigger": { "main": [[{ "node": "Branch1", "type": "main", "index": 0 }], [{ "node": "Branch2", "type": "main", "index": 0 }]] },
+    "Branch1": { "main": [[{ "node": "Merge", "type": "main", "index": 0 }]] },
+    "Branch2": { "main": [[{ "node": "Merge", "type": "main", "index": 1 }]] }
+  },
+  "active": false
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@n8n-to-code/executor",
+  "version": "0.1.0",
+  "description": "DAG-based workflow executor with parallel execution support",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "@n8n-to-code/types": "0.1.0"
+  }
+}
